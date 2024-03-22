@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caro Game</title>
+    <style>
+        /* Center the caro board */
+        .caro-board {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightblue; /* Add background color */
+        }
+
+        /* Style for player avatar */
+        .player-avatar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: lightgreen; /* Add background color */
+        }
+
+        /* Style for player name */
+        .player-name {
+            font-weight: bold;
+            margin-top: 10px;
+            color: red; /* Add text color */
+        }
+
+        /* Style for player elo */
+        .player-elo {
+            margin-top: 5px;
+            color: blue; /* Add text color */
+        }
+
+        /* Position the quit game button */
+        .quit-game {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: yellow; /* Add background color */
+        }
+
+        /* Position the chat box */
+        .chat-box {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: pink; /* Add background color */
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
+</head>
+<body>
+    <div class="caro-board">
+        <!-- Caro board goes here -->
+    </div>
+
+    <div class="player-avatar">
+        <!-- Player avatar image placeholder goes here -->
+        <div class="player-name">
+            <!-- Player name goes here -->
+        </div>
+        <div class="player-elo">
+            <!-- Player elo goes here -->
+        </div>
+    </div>
+
+    <button class="quit-game">Quit Game</button>
+
+    <div class="chat-box">
+        <!-- Chat box goes here -->
+    </div>
+    <script src="../scripts/game.js"></script>
+</body>
+</html>
