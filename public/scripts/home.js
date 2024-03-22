@@ -1,6 +1,8 @@
+
+
 document.querySelector("#myButton").addEventListener("click", () => {
   axios
-    .get(`https://se-tiktactoe-1.onrender.com/leaderboard`, {
+    .get(`${BACK_END_URL}/leaderboard`, {
       withCredentials: true,
     })
     .then((res) => {
